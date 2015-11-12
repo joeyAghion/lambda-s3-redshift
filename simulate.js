@@ -1,4 +1,4 @@
-// Simulates Lambda function. E.g.:
+// Simulates Lambda function. WARNING: accesses real S3/Redshift. E.g.:
 // $ node test.js
 
 var lambda = require('./index');
@@ -31,7 +31,7 @@ event = {
         "arn" : "arn:aws:s3:::mybucket"
       },
       "object" : {
-        "key" : "fluent_logs/gravity-production/20151001_rails-app10_15.gz",
+        "key" : "fluent_logs/gravity-production/changes/20151112_rails-app5_47.gz",
         "size" : 1024,
         "eTag" : "d41d8cd98f00b204e9800998ecf8427e"
       }

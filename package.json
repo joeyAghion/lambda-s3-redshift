@@ -4,7 +4,10 @@
   "description": "Load gzipped JSON files from S3 into Redshift via a staging table.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "simulate": "node simulate.js",
+    "setup": "node setup.js",
+    "zip": "rm -f lambda-s3-redshift.zip && zip -r lambda-s3-redshift.zip ./*"
   },
   "author": "Joey Aghion",
   "license": "MIT",

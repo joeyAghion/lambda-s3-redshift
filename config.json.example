@@ -2,6 +2,6 @@
   "awsAccessKeyId": "REPLACEME",
   "awsSecretAccessKey": "REPLACEME",
   "connectionString": "postgres://user:pass@dbhost:5439/dbname",
-  "destinationTable": "gravity_changes",
-  "stagingTable": "s3_loads"
+  "destinationTable": "gravity.changes",
+  "stagingTable": "util.s3_loads"
 }

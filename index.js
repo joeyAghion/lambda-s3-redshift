@@ -49,6 +49,7 @@ exports.handler = function(event, context) {
     });
   };
 
+  console.log("Started loading " + event.Records[0].s3.object.key);
   db.connect(function(err) {
     if (err) context.fail(err);
     loadFromS3(event.Records[0].s3);
