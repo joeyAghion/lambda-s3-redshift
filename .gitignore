@@ -1,0 +1,8 @@
+# Ignore private config
+config.json
+
+# Ignore dependencies
+/node_modules
+
+# Ignore packaged zip for uploading
+lambda-s3-redshift.zip

@@ -1,0 +1,15 @@
+{
+  "name": "lambda-s3-redshift",
+  "version": "0.0.1",
+  "description": "Load gzipped JSON files from S3 into Redshift via a staging table.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Aghion",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.2.16",
+    "pg": "^4.4.3"
+  }
+}
