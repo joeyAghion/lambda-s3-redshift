@@ -1,3 +1,7 @@
+# lambda-s3-redshift
+
+This [AWS Lambda](https://aws.amazon.com/lambda/) function loads [gzipped] JSON data from S3 into a Redshift table (making use of a staging table to avoid duplication).
+
 ## Set-up:
 
     git clone <repo>
@@ -10,4 +14,4 @@
     npm run setup # optional, to create staging table
     npm run zip # package for upload to AWS
 
-Copyright 2015 Joey Aghion, Artsy [MIT license](LICENSE.txt)
+Copyright 2015 Joey Aghion, Artsy [[MIT license](LICENSE.txt)]
