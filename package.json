@@ -12,6 +12,7 @@
   "author": "Joey Aghion",
   "license": "MIT",
   "dependencies": {
+    "async": "^1.5.0",
     "aws-sdk": "^2.2.16",
     "pg": "^4.4.3"
   }
