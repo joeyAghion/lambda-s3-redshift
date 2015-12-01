@@ -25,7 +25,7 @@ exports.handler = function(event, context) {
   };
   var loadFromS3 = function(callback) {
     console.log("Started loading " + s3.object.key + " (try " + ++tries + ")");
-    db.query('BEGIN', function(err, result) {
+    db.query('BEGIN; LOCK ' + config.stagingTable, function(err, result) {
       if (err) return callback(err);
       var select = "SELECT";
       db.query("SELECT 1 FROM " + config.stagingTable + " WHERE key = $1", [s3.object.key], function(err, result) {
