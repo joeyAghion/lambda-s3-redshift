@@ -6,8 +6,8 @@ This [AWS Lambda](https://aws.amazon.com/lambda/) function loads [gzipped] JSON 
 
     git clone <repo>
     cd <dir>
-    nvm install 0.10.36 # version supported by AWS Lambda
-    nvm use 0.10.36
+    nvm install 4.3 # version supported by AWS Lambda
+    nvm use 4.3
     npm install
     cp config.example.json config.json # and edit to suit needs
     npm run setup # optional, to create staging table
